@@ -1,0 +1,52 @@
+{
+    "cordova-plugin-appversion": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-appversion"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "hu.dpal.phonegap.plugins.SpinnerDialog": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Paldom/SpinnerDialog.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "it.mobimentum.phonegapspinnerplugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mobimentum/phonegap-plugin-loading-spinner.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"RareloopAppVersion\"><param name=\"ios-package\" value=\"RareloopAppVersion\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpinnerDialog\"><param name=\"ios-package\" value=\"CDVSpinnerDialog\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpinnerPlugin\"><param name=\"ios-package\" value=\"SpinnerPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-appversion": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        },
+        "hu.dpal.phonegap.plugins.SpinnerDialog": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        },
+        "it.mobimentum.phonegapspinnerplugin": {
+            "PACKAGE_NAME": "com.ciandt.tt"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-appversion/www/app-version.js",
+            "id": "cordova-plugin-appversion.RareloopAppVersion",
+            "pluginId": "cordova-plugin-appversion",
+            "clobbers": [
+                "AppVersion"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/hu.dpal.phonegap.plugins.SpinnerDialog/www/spinner.js",
+            "id": "hu.dpal.phonegap.plugins.SpinnerDialog.SpinnerDialog",
+            "pluginId": "hu.dpal.phonegap.plugins.SpinnerDialog",
+            "merges": [
+                "window.plugins.spinnerDialog"
+            ]
+        },
+        {
+            "file": "plugins/it.mobimentum.phonegapspinnerplugin/www/spinnerplugin.js",
+            "id": "it.mobimentum.phonegapspinnerplugin.SpinnerPlugin",
+            "pluginId": "it.mobimentum.phonegapspinnerplugin",
+            "clobbers": [
+                "window.spinnerplugin"
+            ]
+        }
+    ]
+}
